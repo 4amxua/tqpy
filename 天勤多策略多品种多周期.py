@@ -304,7 +304,7 @@ class 止损止盈Strategy(Strategy):
                 # 在两根K线较高点加一跳，进行空头止损
                 # kline_high = max(Bar.iloc[-2].high, Bar.iloc[-3].high)      
 
-# Config = {'broker_id':'经纪', 'account_id':'交易账号', 'password':'交易密码','Tqaccount':'天勤账号', 'Tqpassword':'天勤密码'}
+Config = {'broker_id':'经纪', 'account_id':'交易账号', 'password':'交易密码','Tqaccount':'天勤账号', 'Tqpassword':'天勤密码'}
 if __name__ == '__main__':
     t = CtpGateway()
     t.add_Strategy(MACDStrategy())
